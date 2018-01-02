@@ -44,12 +44,12 @@ p {
   }
 
   .item1 {
-    flex:0 0 100%;
+    flex: 0 0 100%;
     align-self: flex-start;
   }
 
   .item2 {
-    flex:0 0 100%;
+    flex: 0 0 100%;
     text-align: center;
     align-self: flex-end;
     padding: 10px;
