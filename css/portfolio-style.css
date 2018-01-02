@@ -36,7 +36,7 @@ p {
 }
 
 
-@media screen and (max-width: 699px)
+@media screen and (max-width: 1024px)
 {
   .header {
     display: flex;
@@ -57,8 +57,9 @@ p {
   }
 
   .bio-image {
-    max-width: 60%;
+    max-width: 100%;
   }
+
   .prezi-container {
     display: flex;
     flex-direction: column;
@@ -70,59 +71,33 @@ p {
   }
 }
 
-@media screen and (max-width: 1024px)
+@media screen and (min-width: 1025px)
 {
-  .header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .item1 {
-    flex:0 0 100%;
-    align-self: center;
-  }
-
-  .item2 {
-    text-align: center;
-    align-self: center;
-    padding: 10px;
-    max-width: 100%;
-  }
-
-  .bio-image {
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 700px)
-{
-  .prezi-container {
-    display: flex;
-  }
-
-  .presentation{
-    max-width: 100%;
-  }
-
 .header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
+  }
 
 .item1 {
   align-self: flex-start;
-}
+  }
 
 .item2 {
   text-align: right;
   align-self: flex end
   padding: 10px;
   max-width: 100%;
-}
+  }
 
 .bio-image {
   max-width: 100%;
 }
+.prezi-container {
+  display: flex;
+  }
+
+.presentation{
+  max-width: 100%;
+  }
 }
