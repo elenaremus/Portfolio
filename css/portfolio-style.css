@@ -6,54 +6,123 @@ h1 {
   font-weight: 800;
   font-size: 45px;
 }
+
 h2 {
   font-weight: 700;
   font-size: 25px;
 }
+
 p {
   font-weight: 300;
   font-size: 12px;
   margin: 5px;
 }
-.header {
-  list-style: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-.image {
-  height: auto;
-  width: 50%;
-  margin: 10px;
-  display: flex;
-}
 
-.myname {
-  margin: 10px;
-  text-align:right;
-}
+
+
 .hero {
   width:100%
 }
-.prezis {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-.presentation {
-  height: auto;
-  width: 30%;
-  display: flex;
-}
+
 .linkedin {
   color: blue;
 }
+
 .social {
   list-style: none;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-around;
+  justify-content: right;
+}
+
+
+@media screen and (max-width: 699px)
+{
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .item1 {
+    flex:0 0 100%;
+    align-self: flex-start;
+  }
+
+  .item2 {
+    flex:0 0 100%;
+    text-align: center;
+    align-self: flex-end;
+    padding: 10px;
+  }
+
+  .bio-image {
+    max-width: 60%;
+  }
+  .prezi-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .presentation{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px)
+{
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .item1 {
+    flex:0 0 100%;
+    align-self: center;
+  }
+
+  .item2 {
+    text-align: center;
+    align-self: center;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .bio-image {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px)
+{
+  .prezi-container {
+    display: flex;
+  }
+
+  .presentation{
+    max-width: 100%;
+  }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item1 {
+  align-self: flex-start;
+}
+
+.item2 {
+  text-align: right;
+  align-self: flex end
+  padding: 10px;
+  max-width: 100%;
+}
+
+.bio-image {
+  max-width: 100%;
+}
 }
